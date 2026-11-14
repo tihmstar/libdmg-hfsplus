@@ -1,5 +1,6 @@
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+
 #include <stdint.h>
-#include <hfs/hfsplus.h>
 
 /* This routine is taken from Apple's TN 1150, with adaptations for C */
 
@@ -376,12 +377,12 @@ uint16_t gLowerCaseTable[] = {
             0xFFF8, 0xFFF9, 0xFFFA, 0xFFFB, 0xFFFC, 0xFFFD, 0xFFFE, 0xFFFF,
 };
 
-int32_t FastUnicodeCompare ( register uint16_t str1[], register uint16_t length1,
-                            register uint16_t str2[], register uint16_t length2)
+int32_t FastUnicodeCompare ( uint16_t str1[], uint16_t length1,
+                            uint16_t str2[], uint16_t length2)
 {
-    register uint16_t     c1,c2;
-    register uint16_t     temp;
-    register uint16_t*    lowerCaseTable;
+    uint16_t     c1,c2;
+    uint16_t     temp;
+    uint16_t*    lowerCaseTable;
 
     lowerCaseTable = gLowerCaseTable;
 

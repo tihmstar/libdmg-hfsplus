@@ -1,17 +1,19 @@
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+#include "../includes/libdmg-hfsplus/dmg/dmgfile.h"
+#include "../includes/libdmg-hfsplus/dmg/filevault.h"
+#include "../includes/libdmg-hfsplus/hfs/hfslib.h"
+
+#include <inttypes.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <time.h>
 #include <string.h>
 #include <unistd.h>
-#include <hfs/hfsplus.h>
-#include <dmg/dmgfile.h>
-#include <dmg/filevault.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <dirent.h>
-#include "hfs/hfslib.h"
-#include <inttypes.h>
 
 char endianness;
 

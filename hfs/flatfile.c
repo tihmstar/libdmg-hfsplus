@@ -1,5 +1,6 @@
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+
 #include <stdlib.h>
-#include <hfs/hfsplus.h>
 
 static int flatFileRead(io_func* io, off_t location, size_t size, void *buffer) {
   FILE* file;

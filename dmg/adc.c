@@ -1,10 +1,10 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+#include "../includes/libdmg-hfsplus/dmg/adc.h"
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-
-#include <dmg/dmg.h>
-#include <dmg/adc.h>
 
 size_t adc_decompress(size_t in_size, unsigned char *input, size_t avail_size, unsigned char *output, size_t *bytes_written)
 {

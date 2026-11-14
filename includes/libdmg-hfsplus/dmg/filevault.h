@@ -1,8 +1,9 @@
 #ifndef FILEVAULT_H
 #define FILEVAULT_H
 
+#include <libdmg-hfsplus/dmg/dmg.h>
+
 #include <stdint.h>
-#include "dmg.h"
 
 #ifdef HAVE_CRYPT
 

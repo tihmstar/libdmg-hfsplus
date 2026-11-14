@@ -1,8 +1,9 @@
 /* Read-only structural/allocation checks for bare HFS+/HFSX images.
  * Does not mount, repair, replay journals, or invoke a system checker. */
 #define _GNU_SOURCE
-#include <hfs/hfsplus.h>
 #include "verify.h"
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+
 #include <fcntl.h>
 #include <inttypes.h>
 #include <setjmp.h>

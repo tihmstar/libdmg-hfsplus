@@ -1,12 +1,12 @@
 #ifndef DMG_H
 #define DMG_H
 
+#include <libdmg-hfsplus/hfs/hfsplus.h>
+#include <libdmg-hfsplus/abstractfile.h>
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
-
-#include <hfs/hfsplus.h>
-#include "abstractfile.h"
 
 #define CHECKSUM_CRC32 0x00000002
 #define CHECKSUM_MKBLOCK 0x0002

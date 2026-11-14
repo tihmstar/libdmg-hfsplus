@@ -20,3 +20,14 @@ add_subdirectory(dmg)
 add_subdirectory(hdutil)
 add_subdirectory(hfs)
 
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/includes/
+    DESTINATION include
+    FILES_MATCHING PATTERN "*.h"
+)
+
+install(TARGETS common dmg hdutil hfs
+    ARCHIVE DESTINATION lib
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION bin
+)
+

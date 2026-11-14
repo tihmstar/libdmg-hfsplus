@@ -2,14 +2,15 @@
  * Allocation records are rebuilt; CNIDs and native hardlink records are retained.
  * The JSON and storage files must stay beside each other when moved. */
 #define _GNU_SOURCE
-#include <hfs/hfsplus.h>
+#include "manifest.h"
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+#include "../third_party/lzfse/lzfse.h"
+#define insert lzfse_insert_bits
+#include "../third_party/lzfse/lzvn_decode_base.h"
+#undef insert
 #include <json-c/json.h>
 #include <openssl/evp.h>
 #include <zlib.h>
-#include "lzfse.h"
-#define insert lzfse_insert_bits
-#include "lzvn_decode_base.h"
-#undef insert
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -18,7 +19,6 @@
 #include <inttypes.h>
 #include <stddef.h>
 #include <string.h>
-#include "manifest.h"
 
 #define SCHEMA "apple-firmware.hfs-native/1"
 #define CHUNK (1024 * 1024)

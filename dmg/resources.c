@@ -1,10 +1,10 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
-
-#include <dmg/dmg.h>
 
 static char plstData[1032] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,

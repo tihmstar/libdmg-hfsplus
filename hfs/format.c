@@ -1,11 +1,12 @@
 /* Native formatter for fresh bare HFS+/HFSX images. No donor, mount, or
  * external mkfs process. Allocation and B-tree maps are created from scratch. */
 #define _GNU_SOURCE
-#include <hfs/hfsplus.h>
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
 #include "format.h"
+
+#include <inttypes.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <inttypes.h>
 #include <limits.h>
 #include <stddef.h>
 #include <string.h>

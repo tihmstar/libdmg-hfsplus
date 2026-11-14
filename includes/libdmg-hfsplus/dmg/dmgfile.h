@@ -4,7 +4,7 @@
  *
  */
 
-#include <dmg/dmg.h>
+#include <libdmg-hfsplus/dmg/dmg.h>
 
 io_func* openDmgFile(AbstractFile* dmg);
 io_func* openDmgFilePartition(AbstractFile* dmg, int partition);

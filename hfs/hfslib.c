@@ -1,12 +1,13 @@
+#include "../includes/libdmg-hfsplus/common.h"
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+#include "../includes/libdmg-hfsplus/hfs/hfscompress.h"
+#include "../includes/libdmg-hfsplus/abstractfile.h"
+
 #include <string.h>
 #include <unistd.h>
 #include <dirent.h>
 #include <time.h>
 #include <sys/types.h>
-#include "common.h"
-#include <hfs/hfsplus.h>
-#include <hfs/hfscompress.h>
-#include "abstractfile.h"
 #include <sys/stat.h>
 #include <inttypes.h>
 

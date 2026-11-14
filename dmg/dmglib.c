@@ -1,7 +1,8 @@
+#include "../includes/libdmg-hfsplus/common.h"
+#include "../includes/libdmg-hfsplus/abstractfile.h"
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+
 #include <string.h>
-#include "common.h"
-#include "abstractfile.h"
-#include <dmg/dmg.h>
 
 uint32_t calculateMasterChecksum(ResourceKey* resources);
 

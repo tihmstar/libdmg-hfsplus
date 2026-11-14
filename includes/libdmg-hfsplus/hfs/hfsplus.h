@@ -1,12 +1,11 @@
 #ifndef HFSPLUS_H
 #define HFSPLUS_H
 
+#include <libdmg-hfsplus/common.h>
+
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-
-
-#include "common.h"
 
 #define READ(a, b, c, d) ((*((a)->read))(a, b, c, d))
 #define WRITE(a, b, c, d) ((*((a)->write))(a, b, c, d))
@@ -580,8 +579,8 @@ extern "C" {
 
 	int removeFromBTree(BTree* tree, BTKey* searchKey);
 
-	int32_t FastUnicodeCompare ( register uint16_t str1[], register uint16_t length1,
-		                    register uint16_t str2[], register uint16_t length2);
+	int32_t FastUnicodeCompare ( uint16_t str1[], uint16_t length1,
+		                           uint16_t str2[], uint16_t length2);
 #ifdef __cplusplus
 }
 #endif

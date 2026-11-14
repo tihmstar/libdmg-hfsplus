@@ -1,5 +1,6 @@
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+
 #include <stdlib.h>
-#include <hfs/hfsplus.h>
 
 BTNodeDescriptor* readBTNodeDescriptor(uint32_t num, BTree* tree) {
   BTNodeDescriptor* descriptor;

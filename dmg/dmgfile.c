@@ -3,13 +3,13 @@
  *  libdmg-hfsplus
  */
 
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+#include "../includes/libdmg-hfsplus/dmg/adc.h"
+#include "../includes/libdmg-hfsplus/dmg/dmgfile.h"
+
 #include <stdlib.h>
 #include <string.h>
 #include <zlib.h>
-
-#include <dmg/dmg.h>
-#include <dmg/adc.h>
-#include <dmg/dmgfile.h>
 
 static void cacheRun(DMG* dmg, BLKXTable* blkx, int run) {
 	size_t bufferSize;

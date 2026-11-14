@@ -1,6 +1,6 @@
-#include "common.h"
-#include "hfsplus.h"
-#include "abstractfile.h"
+#include <libdmg-hfsplus/hfs/hfsplus.h>
+#include <libdmg-hfsplus/common.h>
+#include <libdmg-hfsplus/abstractfile.h>
 
 #ifdef __cplusplus
 extern "C" {

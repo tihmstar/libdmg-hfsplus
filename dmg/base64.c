@@ -1,9 +1,9 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-
-#include <dmg/dmg.h>
 
 unsigned char* decodeBase64(char* toDecode, size_t* dataLength) {
   uint8_t buffer[4];

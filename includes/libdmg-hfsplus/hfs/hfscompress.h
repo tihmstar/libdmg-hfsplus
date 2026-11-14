@@ -1,8 +1,9 @@
 #ifndef HFSCOMPRESS_H
 #define HFSCOMPRESS_H
 
+#include <libdmg-hfsplus/common.h>
+
 #include <stdint.h>
-#include "common.h"
 
 #define CMPFS_MAGIC 0x636D7066
 

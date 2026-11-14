@@ -1,7 +1,7 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+
 #include <stdlib.h>
 #include <string.h>
-
-#include <dmg/dmg.h>
 
 static unsigned char atapi_data [4096] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,

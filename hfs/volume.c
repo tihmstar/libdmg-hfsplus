@@ -1,6 +1,7 @@
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+
 #include <stdlib.h>
 #include <string.h>
-#include <hfs/hfsplus.h>
 
 void flipForkData(HFSPlusForkData* forkData) {
   FLIPENDIAN(forkData->logicalSize);

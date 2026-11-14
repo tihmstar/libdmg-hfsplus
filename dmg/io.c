@@ -1,11 +1,12 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+#include "../includes/libdmg-hfsplus/dmg/adc.h"
+
+#include <inttypes.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <zlib.h>
-
-#include <dmg/dmg.h>
-#include <dmg/adc.h>
-#include <inttypes.h>
 
 #define SECTORS_AT_A_TIME 0x800
 

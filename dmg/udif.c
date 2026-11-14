@@ -1,8 +1,8 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
-
-#include <dmg/dmg.h>
 
 void flipUDIFChecksum(UDIFChecksum* o, char out) {
   int i;

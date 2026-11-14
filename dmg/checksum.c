@@ -1,8 +1,8 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-
-#include <dmg/dmg.h>
 
 void BlockSHA1CRC(void* token, const unsigned char* data, size_t len) {
   ChecksumToken* ckSumToken;

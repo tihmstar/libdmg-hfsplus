@@ -1,10 +1,10 @@
+#include "../includes/libdmg-hfsplus/dmg/dmg.h"
+#include "../includes/libdmg-hfsplus/dmg/filevault.h"
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-
-#include <dmg/dmg.h>
-#include <dmg/filevault.h>
 
 char endianness;
 

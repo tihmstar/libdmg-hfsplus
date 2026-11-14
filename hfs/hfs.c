@@ -1,17 +1,19 @@
+#include "manifest.h"
+#include "format.h"
+#include "verify.h"
+
+#include "../includes/libdmg-hfsplus/hfs/hfsplus.h"
+#include "../includes/libdmg-hfsplus/hfs/hfslib.h"
+#include "../includes/libdmg-hfsplus/abstractfile.h"
+
+#include <inttypes.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
 #include <unistd.h>
-#include <hfs/hfsplus.h>
 #include <dirent.h>
-
-#include <hfs/hfslib.h>
-#include "abstractfile.h"
-#include <inttypes.h>
-#include "manifest.h"
-#include "format.h"
-#include "verify.h"
 
 char endianness;
 
