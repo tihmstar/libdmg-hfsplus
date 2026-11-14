@@ -13,6 +13,8 @@ IF(BUILD_STATIC)
 	SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 ENDIF(BUILD_STATIC)
 
+add_compile_options(-fPIC)
+
 include_directories(${PROJECT_SOURCE_DIR}/includes)
 
 add_subdirectory(common)
